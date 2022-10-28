@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Belajar Form</title>
+    </head>
+
+    <body>
+        <h2>Formulir Pendaftaran Mahasiswa</h2>
+        <!-- enctype digunakan untuk keperluan upload file -->
+        <form action="index.php" method="get" enctype="text/plain">
+            <label for="">Nama Lengkap</label><br>
+            <input type="" name="nama" placeholder="Masukkan Nama"> <br>
+
+            <label for="">NPM</label><br>
+            <input type="number" name="NPM" placeholder="Masukkan NPM" required><br>
+
+            <label for="">Tanggal Lahir</label><br>
+            <input type="date" name="tgl_lahir"  required><br><br>
+
+            <input type="checkbox" name="jenis_kel" id="" value="Laki - Laki">Laki - Laki
+            <input type="checkbox" name="jenis_kel" id="" value="Perempuan">Perempuan
+
+            <br>
+
+            <input type="file" name="dokumen" id=""><br><br>
+
+            <p>Transportasi</p>
+            <select name="transportasi" id="">
+                <option value="" selected disabled >-----Pilih Salah Satu-----</option>
+                <option value="motor">motor</option>
+                <option value="mobil">mobil</option>
+                <option value="sepeda">sepeda</option>
+                <option value="jukung">Jukung</option>
+            </select><br><br>
+
+            <input type="password" name="password" placeholder="input password" maxlength="3"> <br><br>
+
+            <input type="submit" name="SIMPAN" value="simpan">
+
+        </form>
+
+    </body>
+</html>
